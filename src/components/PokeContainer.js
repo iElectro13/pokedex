@@ -28,7 +28,7 @@ const PokeContainer = () => {
 
     const [pokeList, setPokeList] = useState([])
     
-    const [pokeColors, setPokeColors] = useState({
+    const pokeColors = {
         normal: '#b0b0b0',
         fighting: '#E8581B',
         flying: '#5dffef',
@@ -49,7 +49,7 @@ const PokeContainer = () => {
         fairy: '#ff79b7',
         unknown: 'white',
         shadow: '#6e553e'
-    })
+    }
 
     return (
         <div className="poke-container" id="poke-container">
