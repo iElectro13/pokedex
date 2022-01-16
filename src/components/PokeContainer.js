@@ -15,7 +15,7 @@ const PokeContainer = () => {
     }, [])
     
     const dataFetch = async() => {
-        const resp = await fetch('https://pokeapi.co/api/v2/pokemon')
+        const resp = await fetch('https://pokeapi.co/api/v2/pokemon?offset=20&limit=200')
         const data = await resp.json();
         return data.results
     }

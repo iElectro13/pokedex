@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Pokemon = ({ color, image, name, id, type }) => {
     return (
         <div className="pokemon" style={{background: color}}>
